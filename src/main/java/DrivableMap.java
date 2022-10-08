@@ -71,7 +71,4 @@ class DrivableMap {
             }
         } return final_list;
     }
-
-
-    
 }
