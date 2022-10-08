@@ -11,6 +11,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+// Do not use List
+
 class DrivableMap {
     HashMap<String, Drivable> drivable_map;
 

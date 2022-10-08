@@ -46,10 +46,6 @@ public class Trader<T> {
         wishlist = new ArrayList<T>();
     }
 
-    // QS: Is this the correct way? Why do we have to construct two times?
-    // Overload
-
-
     /* TODO: Implement the method addToWishlist that takes an
      *       object of type T and adds it to this Trader's wishlist.
      */
