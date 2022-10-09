@@ -59,15 +59,21 @@ class DrivableMap {
      *       drivable_map.
      */
 
-    public ArrayList<Tradable> getTradable() {
-        ArrayList<Tradable> final_list = new ArrayList<>();
+    public List<Tradable> getTradable() {
+        List final_list = new ArrayList();
 
-        String[] keys = (String[]) drivable_map.keySet().toArray();
-        int n = keys.length;
+        // String[] keys = (String[]) drivable_map.keySet().toArray();
+        // int n = keys.length;
 
-        for(int j = 0; j < n; j++) {
-            if (drivable_map.get(keys[j]) instanceof Tradable) {
-                final_list.add((Tradable) drivable_map.get(keys[j]));
+        // for(int j = 0; j < n; j++) {
+        //     if (drivable_map.get(keys[j]) instanceof Tradable) {
+        //         final_list.add((Tradable) drivable_map.get(keys[j]));
+        //     }
+        // } 
+
+        for (Object key: drivable_map.keySet()) {
+            if (drivable_map.get(key) instanceof Tradable) {
+                final_list.add(drivable_map.get(key));
             }
         } return final_list;
     }
