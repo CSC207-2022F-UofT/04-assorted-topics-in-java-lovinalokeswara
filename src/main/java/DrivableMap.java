@@ -45,11 +45,9 @@ class DrivableMap {
      * iterate through drivable_map.
      */
     public boolean hasFasterThan(int speed) {
-        ArrayList keys = (ArrayList) drivable_map.keySet();
 
-        for(Object s: keys) {
-            String t = (String) s;
-            if (drivable_map.get(t).getMaxSpeed() >= speed) {
+        for(String s: drivable_map.keySet()) {
+            if (drivable_map.get(s).getMaxSpeed() >= speed) {
                 return true;
             }
         } return false;
